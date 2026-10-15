@@ -2,24 +2,24 @@ import java.util.Objects;
 
 public class User
 {
-    public int c_id;
-    public String c_nam;
+    public int id;
+    public String name;
 
-    public User(int i, String n){
-        c_id = i;
-        if(n.length() > 100) // Validating name
+    public User(int id, String name){
+        this.id = id;
+        if(name.length() > 100) // Validating name
         {
             return;
         }
-        c_nam = n;
+        this.name = name;
     }
 
-    public int geti(){ return c_id; }
+    public int getId(){ return id; }
 
     @Override
     public boolean equals(Object o){
         if(o instanceof User u){
-            return Objects.equals(u.c_nam, c_nam);
+            return Objects.equals(u.name, name);
         }
         return false;
     }
