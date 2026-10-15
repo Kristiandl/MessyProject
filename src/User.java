@@ -16,6 +16,10 @@ public class User
 
     public int getId(){ return id; }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public boolean equals(Object o){
         if(o instanceof User u){
