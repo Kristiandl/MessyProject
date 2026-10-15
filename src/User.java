@@ -5,9 +5,9 @@ public class User
 
     public User(int i, String n){
         c_id = i;
-        if(n.length() < 0 || n.length() > 100) // Testing length
+        if(n.length() < 0 || n.length() > 100) // Validating name
         {
-            return; //If string is invalid, we dont try to store it
+            return;
         }
         c_nam = n;
     }
