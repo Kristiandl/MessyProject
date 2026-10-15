@@ -5,7 +5,7 @@ public class User
 
     public User(int i, String n){
         c_id = i;
-        if(n.length() < 0 || n.length() > 100) // Validating name
+        if(n.length() > 100) // Validating name
         {
             return;
         }
