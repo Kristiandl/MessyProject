@@ -13,5 +13,6 @@ public class Persister
             bw.write(user.getId() + ";" + user.getName());
             bw.newLine();
         }
+        bw.close();
     }
 }
