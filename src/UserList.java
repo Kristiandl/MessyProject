@@ -13,7 +13,7 @@ public class UserList
         users.add(user);
     }
 
-    public ArrayList<User> getUser()
+    public ArrayList<User> getUsers()
     {
         return users;
     }
