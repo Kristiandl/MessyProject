@@ -6,11 +6,11 @@ public class UserList
 
     public void add(User user)
     {
-        users.add(user);
-        if(user == null)
+        if (user == null)
         {
-            return;
+            throw new IllegalArgumentException("user må ikke være null");
         }
+        users.add(user);
     }
 
     public ArrayList<User> getUser()
