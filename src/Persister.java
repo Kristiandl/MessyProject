@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Persister
 {
-    public static void save(List<User> users) throws IOException
+    public static void save(ArrayList<User> users) throws IOException
     {
         File file = new File("users.txt");
         FileWriter fw = new FileWriter(file);
